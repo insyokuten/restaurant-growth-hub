@@ -1,0 +1,16 @@
+title: "飲食店経営の右腕"
+description: "個人・小規模飲食店の売上改善、利益向上、集客に役立つ実践メディア"
+url: "https://insyokuten.github.io"
+baseurl: "/restaurant-growth-hub"
+lang: ja
+timezone: Asia/Tokyo
+markdown: kramdown
+permalink: /articles/:title/
+future: false
+line_url: ""
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
