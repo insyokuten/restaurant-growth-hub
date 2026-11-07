@@ -7,7 +7,7 @@ timezone: Asia/Tokyo
 markdown: kramdown
 permalink: /articles/:title/
 future: false
-line_url: ""
+line_url: "https://s.lmes.jp/landing-qr/2011246046-wwYg1mao?uLand=HYND0b"
 plugins:
   - jekyll-sitemap
 exclude:
