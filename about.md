@@ -28,7 +28,7 @@ permalink: /about/
   </div>
   <div class="info-panel">
     <h2>運営者・お問い合わせ</h2>
-    <p>運営形態：個人運営<br>屋号：飲食店経営の右腕<br>お問い合わせ窓口：現在、正式な窓口情報を確認しています。</p>
+    <p>運営形態：個人運営<br>屋号：飲食店経営の右腕<br>お問い合わせ：<a href="mailto:create.to.market@gmail.com">メール</a> または <a href="{{ site.line_url | escape }}">公式LINE</a></p>
   </div>
   <div class="info-cta"><h2>まずは、お店の課題を整理しませんか？</h2><p>公式LINEから無料売上アップAI診断をご利用いただけます。</p><a class="button" href="{{ site.line_url | escape }}" target="_blank" rel="noopener noreferrer">無料売上アップAI診断へ</a></div>
 </section>
