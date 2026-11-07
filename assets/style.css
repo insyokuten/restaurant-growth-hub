@@ -9,3 +9,16 @@
 .prose td:last-child,.prose th:last-child{text-align:right;white-space:nowrap;font-weight:700}
 .prose table caption{caption-side:bottom;text-align:left;color:#59647a;font-size:12px;padding:10px 2px}
 @media(max-width:620px){.prose table{font-size:13px;margin:20px 0}.prose th,.prose td{padding:12px 9px}.prose td:last-child,.prose th:last-child{white-space:normal}.article{margin:35px auto}.prose{overflow-wrap:anywhere}}
+
+/* Article table readability v2: clear hierarchy and mobile-first layout */
+.article .prose table{display:table;width:100%;table-layout:fixed;border:1px solid #d8dce5;border-collapse:separate;border-spacing:0;border-radius:14px;background:#fff;overflow:hidden;box-shadow:0 6px 22px rgba(27,42,74,.08);font-size:16px;line-height:1.6}
+.article .prose thead th{background:#1B2A4A;color:#fff;padding:18px 20px;font-size:15px;font-weight:800;letter-spacing:.01em;vertical-align:middle}
+.article .prose thead th:first-child{width:37%;text-align:left}
+.article .prose thead th:last-child{width:63%;text-align:right}
+.article .prose tbody td{padding:18px 20px;border-bottom:1px solid #e7e9ee;vertical-align:middle}
+.article .prose tbody tr:last-child td{border-bottom:0}
+.article .prose tbody tr:nth-child(even){background:#f5f7fa}
+.article .prose tbody td:first-child{font-weight:700;color:#1B2A4A}
+.article .prose tbody td:last-child{text-align:right;color:#1B2A4A;font-size:18px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:620px){.article .prose table{font-size:14px;table-layout:fixed}.article .prose thead th{font-size:12px;padding:14px 12px;line-height:1.5;overflow-wrap:normal;word-break:normal}.article .prose thead th:first-child{width:34%}.article .prose thead th:last-child{width:66%}.article .prose tbody td{padding:15px 12px;line-height:1.5;overflow-wrap:normal;word-break:normal}.article .prose tbody td:last-child{font-size:16px;white-space:nowrap}}
+@media(max-width:350px){.article .prose thead th,.article .prose tbody td{padding-left:8px;padding-right:8px}.article .prose tbody td:last-child{font-size:15px}}
