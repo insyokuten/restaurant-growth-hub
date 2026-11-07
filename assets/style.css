@@ -50,3 +50,21 @@
 .home-bottom-cta .button{margin-top:18px}
 .home-bottom-cta .home-cta-note{font-size:12px;color:#c8d0dd!important;margin:14px 0 0}
 @media(max-width:620px){.home-hero{padding:60px 0 55px}.home-hero h1{font-size:clamp(36px,9vw,54px)}.home-hero-lead br{display:none}.home-hero .actions{flex-direction:column}.home-hero .actions .button{text-align:center}.home-section{padding-top:42px;padding-bottom:26px}.home-problem-grid{grid-template-columns:1fr;gap:10px}.home-problem{padding:16px 16px 16px 48px}.home-problem:before{top:17px;left:16px}.home-heading-row{align-items:center}.home-bottom-cta{padding:42px 20px;margin-top:36px;border-radius:14px}.home-bottom-cta .button{display:block}}
+
+
+/* Trust and policy pages */
+.info-page{max-width:850px;margin:0 auto}
+.info-page>h1{font-size:clamp(32px,5vw,48px);line-height:1.4;margin:10px 0 18px}
+.info-page>.lead{line-height:1.9;margin-bottom:32px}
+.info-panel{background:#fff;border:1px solid #e9e4dc;border-radius:15px;padding:28px 32px;margin:18px 0}
+.info-panel h2{font-size:clamp(19px,2.6vw,24px);margin:0 0 12px}
+.info-panel p{margin:12px 0;line-height:1.9}
+.info-panel ul{padding-left:22px;margin:14px 0}
+.info-panel li{margin:9px 0}
+.info-panel a{color:#a4531c;text-underline-offset:3px}
+.info-cta{background:#1b2a4a;color:#fff;text-align:center;border-radius:16px;padding:34px 26px;margin-top:30px}
+.info-cta h2{margin:0 0 12px;font-size:clamp(21px,3vw,28px)}
+.info-cta p{color:#e1e6ee}
+.info-cta .button{margin-top:10px}
+.info-note{font-size:13px;color:#59647a;background:#fff5e9;border-left:4px solid #e8833a;padding:18px 20px;border-radius:8px}
+@media(max-width:620px){.info-panel{padding:22px 20px}.info-cta{padding:30px 18px}}
