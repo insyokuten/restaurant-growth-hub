@@ -68,3 +68,10 @@
 .info-cta .button{margin-top:10px}
 .info-note{font-size:13px;color:#59647a;background:#fff5e9;border-left:4px solid #e8833a;padding:18px 20px;border-radius:8px}
 @media(max-width:620px){.info-panel{padding:22px 20px}.info-cta{padding:30px 18px}}
+
+/* Prominent brand name in the site header */
+.header .brand{display:flex;align-items:center;gap:10px;min-width:0;font-size:clamp(23px,2.6vw,29px);font-weight:900;letter-spacing:-.035em;line-height:1.25;color:#1B2A4A}
+.header .brand>span{display:flex!important;flex-direction:column;min-width:0;font-size:inherit!important;font-weight:900!important;color:#1B2A4A!important;letter-spacing:inherit!important}
+.header .brand>span>span{font-size:12px!important;font-weight:600!important;color:#59647a!important;letter-spacing:.04em!important;margin-top:5px}
+.header .brand img{width:56px!important;height:56px!important}
+@media(max-width:620px){.header .brand{font-size:clamp(21px,5.7vw,26px);gap:9px}.header .brand img{width:50px!important;height:50px!important}.header .brand>span>span{font-size:11px!important}.nav{padding-top:14px;padding-bottom:14px}}
