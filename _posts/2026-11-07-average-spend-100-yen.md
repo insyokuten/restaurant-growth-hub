@@ -17,12 +17,20 @@ date: 2026-11-07
 
 例えば、1日に30人が来店し、月25日営業するお店なら、延べ来店客数は750人です。全員の平均客単価が100円上がれば、月間売上は75,000円増える計算です。
 
-| 1日の来店客数 | 月25日営業の場合の売上増加額 |
-| :--- | ---: |
-| 10人 | 25,000円 |
-| 20人 | 50,000円 |
-| 30人 | 75,000円 |
-| 50人 | 125,000円 |
+<div style="overflow-x:auto;margin:28px 0;border-radius:14px;border:1px solid #d8dce5;box-shadow:0 5px 20px rgba(27,42,74,.08);background:#fff;">
+  <table style="width:100%;min-width:310px;border-collapse:collapse;table-layout:fixed;margin:0;border:0;border-radius:0;box-shadow:none;font-variant-numeric:tabular-nums;">
+    <thead><tr style="background:#1B2A4A;color:#fff;">
+      <th scope="col" style="width:38%;padding:15px 12px;text-align:left;font-size:13px;line-height:1.5;color:#fff;background:#1B2A4A;">1日の<br>来店客数</th>
+      <th scope="col" style="width:62%;padding:15px 12px;text-align:right;font-size:13px;line-height:1.5;color:#fff;background:#1B2A4A;">月25日営業の<br>売上増加額</th>
+    </tr></thead>
+    <tbody>
+      <tr style="background:#fff;"><td style="padding:16px 12px;border-bottom:1px solid #e7e9ee;font-weight:700;">10人</td><td style="padding:16px 12px;border-bottom:1px solid #e7e9ee;text-align:right;font-weight:800;font-size:17px;white-space:nowrap;">25,000円</td></tr>
+      <tr style="background:#f5f7fa;"><td style="padding:16px 12px;border-bottom:1px solid #e7e9ee;font-weight:700;">20人</td><td style="padding:16px 12px;border-bottom:1px solid #e7e9ee;text-align:right;font-weight:800;font-size:17px;white-space:nowrap;">50,000円</td></tr>
+      <tr style="background:#fff;"><td style="padding:16px 12px;border-bottom:1px solid #e7e9ee;font-weight:700;">30人</td><td style="padding:16px 12px;border-bottom:1px solid #e7e9ee;text-align:right;font-weight:800;font-size:17px;white-space:nowrap;">75,000円</td></tr>
+      <tr style="background:#f5f7fa;"><td style="padding:16px 12px;font-weight:700;">50人</td><td style="padding:16px 12px;text-align:right;font-weight:800;font-size:17px;white-space:nowrap;">125,000円</td></tr>
+    </tbody>
+  </table>
+</div>
 
 *※すべて客数・営業日数が変わらず、平均客単価が100円上がると仮定したシミュレーションです。実績や将来の売上を保証するものではありません。*
 
