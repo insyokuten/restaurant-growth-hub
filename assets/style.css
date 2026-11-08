@@ -75,3 +75,12 @@
 .header .brand>span>span{font-size:12px!important;font-weight:600!important;color:#59647a!important;letter-spacing:.04em!important;margin-top:5px}
 .header .brand img{width:56px!important;height:56px!important}
 @media(max-width:620px){.header .brand{font-size:clamp(21px,5.7vw,26px);gap:9px}.header .brand img{width:50px!important;height:50px!important}.header .brand>span>span{font-size:11px!important}.nav{padding-top:14px;padding-bottom:14px}}
+
+/* Related articles: readable links and tap targets on mobile */
+.related-articles{margin:36px 0 28px;padding:24px;background:#fff;border:1px solid #e9e4dc;border-radius:14px}
+.related-articles h2{font-size:clamp(20px,3vw,25px);line-height:1.4;margin:0 0 14px;color:#1b2a4a}
+.related-articles ul{list-style:none;padding:0;margin:0}
+.related-articles li+li{border-top:1px solid #ece8e1}
+.related-articles a{display:block;padding:14px 0;color:#1b2a4a;font-weight:700;line-height:1.65;text-decoration:underline;text-decoration-color:#e8833a;text-underline-offset:4px;overflow-wrap:anywhere}
+.related-articles a:hover,.related-articles a:focus-visible{color:#a4531c}
+@media(max-width:620px){.related-articles{padding:18px 16px;margin:28px 0 22px}.related-articles a{padding:16px 0}}
