@@ -1,4 +1,26 @@
 ---
 layout: default
 ---
-<article class="article"><p class="eyebrow">経営改善コラム · {{ page.date | date: '%Y.%m.%d' }}</p><h1>{{ page.title | escape }}</h1><p class="lead">{{ page.description | escape }}</p><div class="prose">{{ content }}</div><section class="cta-panel"><h2>自分のお店の改善点を知りたい方へ</h2><p>公式LINEで無料売上アップAI診断をご利用いただけます。</p>{% if site.line_url != '' and site.line_url contains 'https://' %}<a class="button" href="{{ site.line_url | escape }}" rel="noopener noreferrer">無料売上アップAI診断へ</a>{% else %}<p class="muted">無料診断のご案内は準備中です。</p>{% endif %}</section></article>
+{% assign article_content = content | strip %}
+{% assign first_tag = article_content | slice: 0, 3 %}
+<article class="article">
+  <p class="eyebrow">経営改善コラム · {{ page.date | date: '%Y.%m.%d' }}</p>
+  {% unless first_tag == '<h1' %}
+    <h1>{{ page.title | escape }}</h1>
+  {% endunless %}
+  {% assign article_description = page.description | default: '' | strip %}
+  {% assign article_title = page.title | default: '' | strip %}
+  {% if article_description != '' and article_description != article_title %}
+    <p class="lead">{{ article_description | escape }}</p>
+  {% endif %}
+  <div class="prose">{{ content }}</div>
+  <section class="cta-panel">
+    <h2>自分のお店の改善点を知りたい方へ</h2>
+    <p>公式LINEで無料売上アップAI診断をご利用いただけます。</p>
+    {% if site.line_url != '' and site.line_url contains 'https://' %}
+      <a class="button" href="{{ site.line_url | escape }}" rel="noopener noreferrer">無料売上アップAI診断へ</a>
+    {% else %}
+      <p class="muted">無料診断のご案内は準備中です。</p>
+    {% endif %}
+  </section>
+</article>
