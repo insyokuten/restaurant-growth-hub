@@ -14,6 +14,32 @@ layout: default
     <p class="lead">{{ article_description | escape }}</p>
   {% endif %}
   <div class="prose">{{ content }}</div>
+  {% if page.tags and page.tags.size > 0 %}
+    {% assign related_count = 0 %}
+    {% capture related_items %}
+      {% for candidate in site.posts %}
+        {% if candidate.url != page.url %}
+          {% assign shared_tag = false %}
+          {% for tag in page.tags %}
+            {% if candidate.tags contains tag %}
+              {% assign shared_tag = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if shared_tag and related_count < 3 %}
+            <li><a href="{{ candidate.url | relative_url }}">{{ candidate.title | escape }}</a></li>
+            {% assign related_count = related_count | plus: 1 %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endcapture %}
+    {% if related_count > 0 %}
+      <nav class="related-articles" aria-label="関連記事">
+        <h2>関連記事</h2>
+        <ul>{{ related_items }}</ul>
+      </nav>
+    {% endif %}
+  {% endif %}
   <section class="cta-panel">
     <h2>自分のお店の改善点を知りたい方へ</h2>
     <p>公式LINEで無料売上アップAI診断をご利用いただけます。</p>
