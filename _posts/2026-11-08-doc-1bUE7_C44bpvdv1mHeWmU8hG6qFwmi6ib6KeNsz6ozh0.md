@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "飲食店のFLコストとは？計算方法と利益を残す改善手順"
-description: "飲食店のFLコストとは？計算方法と利益を残す改善手順"
+description: "飲食店のFLコストとFL比率の計算方法を具体例で解説。食材原価・人件費を見直し、利益を残すための改善手順を紹介。"
 date: 2026-11-08
+tags: [FLコスト, 原価管理, 利益改善]
 ---
 
 # 飲食店のFLコストとは？計算方法と利益を残す改善手順
@@ -95,3 +96,5 @@ FLコストは食材原価と人件費の合計です。毎月のFL比率を計�
 
 - [中小企業基盤整備機構「飲食店のコスト管理」（支援者向け資料）](https://www.smrj.go.jp/supporter/tool/guidebook/fbrion0000004agy-att/a19vbo000000dm3f.pdf)
 - [Airレジ マガジン「飲食店のFLコスト・FL比率とは？」（2025年9月9日更新）](https://airregi.jp/magazine/guide/2259/)
+## あわせて読みたい
+- [食品ロス削減の具体的な手順を見る]({{ '/articles/2026-11-09-doc-1mWpNuiyYIR__pdjFomeu-9H3z7GHnZ9E5cphHMho28A/' | relative_url }})
