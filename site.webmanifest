@@ -1,0 +1,17 @@
+{
+  "name": "飲食店経営の右腕",
+  "short_name": "飲食店の右腕",
+  "start_url": "/restaurant-growth-hub/",
+  "scope": "/restaurant-growth-hub/",
+  "display": "standalone",
+  "background_color": "#F7F3EC",
+  "theme_color": "#1B2A4A",
+  "icons": [
+    {
+      "src": "/restaurant-growth-hub/assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
