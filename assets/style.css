@@ -84,3 +84,8 @@
 .related-articles a{display:block;padding:14px 0;color:#1b2a4a;font-weight:700;line-height:1.65;text-decoration:underline;text-decoration-color:#e8833a;text-underline-offset:4px;overflow-wrap:anywhere}
 .related-articles a:hover,.related-articles a:focus-visible{color:#a4531c}
 @media(max-width:620px){.related-articles{padding:18px 16px;margin:28px 0 22px}.related-articles a{padding:16px 0}}
+
+/* Mobile-friendly example quotes in editorial articles */
+.article .prose blockquote{box-sizing:border-box;margin:18px 0 22px;padding:16px 20px;border-left:4px solid #e8833a;background:#fffaf3;border-radius:0 10px 10px 0;color:#283750;overflow-wrap:anywhere}
+.article .prose blockquote p{margin:0;line-height:1.85}
+@media(max-width:620px){.article .prose blockquote{margin:16px 0 20px;padding:14px 15px;border-left-width:3px}}
