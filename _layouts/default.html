@@ -2,6 +2,10 @@
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
 <meta name="description" content="{{ page.description | default: site.description | escape }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/icon.svg' | relative_url }}">
+<link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+<meta name="theme-color" content="#1B2A4A">
+<meta name="apple-mobile-web-app-title" content="飲食店の右腕">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | absolute_url }}">
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
