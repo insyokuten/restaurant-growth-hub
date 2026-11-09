@@ -56,3 +56,6 @@ Googleマップに口コミが付いたとき、何をどこまで返信すれ�
 - [Google ビジネス プロフィール公式サイト](https://business.google.com/jp/business-profile/)（口コミ管理機能、2026年11月10日確認）
 - [Google ビジネス プロフィール公式サポート](https://business.google.com/jp/support/)（口コミへの返信・管理の案内、2026年11月10日確認）
 ※返信文は説明用に作成した例文であり、実際の店舗の実績ではありません。
+
+## あわせて読みたい
+- [雨の日の集客対策も確認する]({{ '/articles/2026-11-07-doc-1B_W3XCWhDxkxKOKo0QxfnTGPHOUBznfJJD84OcusrT8/' | relative_url }})
