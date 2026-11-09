@@ -8,10 +8,11 @@
   "theme_color": "#1B2A4A",
   "icons": [
     {
-      "src": "/restaurant-growth-hub/assets/icon.svg",
+      "src": "/restaurant-growth-hub/assets/brand-logo-home-v2.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     }
-  ]
+  ],
+  "id": "/restaurant-growth-hub/"
 }
