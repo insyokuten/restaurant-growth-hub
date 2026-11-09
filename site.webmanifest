@@ -4,11 +4,11 @@
   "start_url": "/restaurant-growth-hub/",
   "scope": "/restaurant-growth-hub/",
   "display": "standalone",
-  "background_color": "#F7F3EC",
+  "background_color": "#1B2A4A",
   "theme_color": "#1B2A4A",
   "icons": [
     {
-      "src": "/restaurant-growth-hub/assets/brand-logo-home-v2.svg",
+      "src": "/restaurant-growth-hub/assets/brand-logo-home-v3.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
