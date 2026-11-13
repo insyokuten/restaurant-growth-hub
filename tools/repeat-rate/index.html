@@ -1,0 +1,41 @@
+---
+layout: default
+title: 飲食店のリピート率・リピーター率計算ツール
+description: リピート率とリピーター率の違いを確認し、人数を入力して無料で計算。計測期間や実人数の注意点も解説。
+permalink: /tools/repeat-rate/
+---
+<section class="section tool">
+<p class="eyebrow">FREE SIMULATOR</p><h1>リピート率・リピーター率 計算ツール</h1>
+<p>似ている2つの数字を、別々に計算できます。どちらも<strong>同じ人を重複して数えない「実人数」</strong>を使います。</p>
+<h2>① リピート率を計算</h2>
+<p>初回来店した人のうち、決めた期間内にもう一度来店した人の割合です。例：10月に初めて来た人が、11月末までに再来店した割合。</p>
+<div class="form-grid">
+<label>対象期間に初回来店した人数（人）<input id="newGuests" type="number" min="0" step="1" value="40"></label>
+<label>そのうち、決めた期限までに再来店した人数（人）<input id="returned" type="number" min="0" step="1" value="12"></label>
+</div>
+<button class="button" id="calcRepeat" type="button">リピート率を計算</button>
+<div id="repeatResult" class="result" role="status" aria-live="polite">入力後に計算してください。</div>
+<h2>② リピーター率を計算</h2>
+<p>集計期間に来店した人のうち、過去に一度でも来店したことがある人の割合です。例：11月の来店客100人のうち、以前にも来店したことがある人が60人。</p>
+<div class="form-grid">
+<label>集計期間の来店客の総実人数（人）<input id="totalGuests" type="number" min="0" step="1" value="100"></label>
+<label>そのうち過去に来店経験がある実人数（人）<input id="repeatGuests" type="number" min="0" step="1" value="60"></label>
+</div>
+<button class="button" id="calcShare" type="button">リピーター率を計算</button>
+<div id="shareResult" class="result" role="status" aria-live="polite">入力後に計算してください。</div>
+<h2>2つの違い</h2>
+<p><strong>リピート率</strong>は「新規客が戻ってくる力」、<strong>リピーター率</strong>は「今のお客様に再来店経験者がどのくらいいるか」を見る指標です。</p>
+<p class="muted">※計算には同じ人を区別できる記録が必要です。初回来店の集計期間・再来店の判定期限・来店客の集計期間を決め、毎回同じ条件で比較してください。リピーター率を延べ来店回数で算出する定義もありますが、このツールは実人数方式です。どちらも業界平均や改善効果を示すものではありません。</p>
+<p>数字をもとに売上改善の優先順位を考えたい方は、<a href="https://s.lmes.jp/landing-qr/2011246046-wwYg1mao?uLand=HYND0b">公式LINEの無料売上アップAI診断</a>をご利用ください。</p>
+<p><a href="{{ '/tools/' | relative_url }}">← 無料ツール一覧へ戻る</a></p>
+</section>
+<script>
+(function(){
+function read(id){const s=document.getElementById(id).value.trim();return s===''?NaN:Number(s)}
+function calc(a,b,target,label){const total=read(a),part=read(b),el=document.getElementById(target);
+if(!Number.isSafeInteger(total)||!Number.isSafeInteger(part)||total<=0||part<0||part>total){el.textContent='人数を確認してください。合計は1人以上、内訳は0人以上かつ合計以下の整数で入力してください。';return}
+const rate=(part/total*100).toLocaleString('ja-JP',{maximumFractionDigits:1});el.textContent=label+'：'+rate+'％（'+part+'人 ÷ '+total+'人 × 100）'}
+document.getElementById('calcRepeat').addEventListener('click',()=>calc('newGuests','returned','repeatResult','リピート率'));
+document.getElementById('calcShare').addEventListener('click',()=>calc('totalGuests','repeatGuests','shareResult','リピーター率'));
+})();
+</script>
