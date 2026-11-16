@@ -43,7 +43,7 @@ date: 2026-11-16
 {% assign break_even_tool = site.pages | where: "permalink", "/tools/break-even/" | first %}
 {% if break_even_tool %}[無料｜損益分岐点・必要客数計算ツールを使う]({{ '/tools/break-even/' | relative_url }}){% endif %}
 
-※ツールの公開前はリンクを表示しません。計算結果は簡易シミュレーションです。
+※計算結果は簡易シミュレーションです。
 
 ## 1日の必要売上と必要客数に直す
 
@@ -102,7 +102,7 @@ date: 2026-11-16
 
 ## 関連記事
 
-損益分岐点を理解したら、次のテーマも合わせて確認しましょう。以下は本番サイトに該当記事がある場合のみ表示します。
+損益分岐点を理解したら、次のテーマも合わせて確認しましょう。
 
 {% assign fl_post = site.posts | where: "title", "飲食店のFLコストとは？計算方法と利益を残す改善手順" | first %}
 {% if fl_post %}
