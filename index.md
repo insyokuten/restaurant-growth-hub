@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 飲食店の売上・利益・集客を改善する経営支援
-description: 個人・小規模飲食店の経営者向け。売上・利益・集客の悩みに役立つ経営改善記事、無料シミュレーター、公式LINEの無料売上アップAI診断をご案内します。
+title: 飲食店経営の右腕｜個人飲食店の売上・利益・集客を支援
+description: 飲食店経営の右腕は、個人・小規模飲食店の売上改善、利益率向上、集客・リピーター対策を支援する情報サイト。経営改善の記事や無料シミュレーター、公式LINEの無料AI診断を提供しています。
 ---
 <section class="hero home-hero" aria-labelledby="home-title">
   <div class="home-hero-inner">
     <p class="eyebrow">個人・小規模飲食店の経営者へ</p>
-    <h1 id="home-title">お店の経営に、<br><em>次の一手を。</em></h1>
+    <h1 id="home-title"><span class="home-brand-name">飲食店経営の右腕</span><br>お店の経営に、<br><em>次の一手を。</em></h1>
     <p class="home-hero-lead">売上・利益・集客の悩みを、ひとりで抱え込まない。<br>実践的な経営ノウハウとAIで、お店の改善をサポートします。</p>
     <div class="actions">
       <a class="button home-primary-button" href="{{ site.line_url | escape }}" target="_blank" rel="noopener noreferrer">公式LINEで無料売上アップAI診断</a>
