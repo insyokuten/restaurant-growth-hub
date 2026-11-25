@@ -89,3 +89,7 @@
 .article .prose blockquote{box-sizing:border-box;margin:18px 0 22px;padding:16px 20px;border-left:4px solid #e8833a;background:#fffaf3;border-radius:0 10px 10px 0;color:#283750;overflow-wrap:anywhere}
 .article .prose blockquote p{margin:0;line-height:1.85}
 @media(max-width:620px){.article .prose blockquote{margin:16px 0 20px;padding:14px 15px;border-left-width:3px}}
+
+/* Brand SEO: keep homepage brand label readable without overpowering the headline */
+.home-hero h1 .home-brand-name{display:inline-block;font-size:clamp(18px,2.5vw,25px);font-weight:800;letter-spacing:.01em;line-height:1.5;color:#1b2a4a;margin-bottom:12px}
+@media(max-width:620px){.home-hero h1 .home-brand-name{font-size:clamp(17px,4.7vw,21px);margin-bottom:10px}}
